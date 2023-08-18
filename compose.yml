@@ -1,0 +1,5 @@
+services:
+  node:
+    build: .
+    environment:
+      TZ: 'UTC'
