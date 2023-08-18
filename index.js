@@ -11,8 +11,14 @@ const jstDate = '2023-04-10 12:00:00+09';
 
 console.log('--------------------');
 console.log(`UTC: ${utcDate}`);
+console.log('from string');
 console.log(dayjs(utcDate).tz());
+console.log('from Date');
+console.log(dayjs(new Date(utcDate)).tz());
 console.log('--------------------');
 console.log(`JST: ${jstDate}`);
+console.log('from string');
 console.log(dayjs(jstDate).tz());
+console.log('from Date');
+console.log(dayjs(new Date(jstDate)).tz());
 console.log('--------------------');
